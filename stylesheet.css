@@ -16,16 +16,30 @@ body {
 h1 { 
     font-size: 30px; 
     font-color: #333; 
-    text-align: center;
     margin: 15px 0 15px 0;  
     border-bottom: 1px solid #CCCCCC;
+    padding: 0;
+}
+
+h2 { 
+    font-size: 30px; 
+    font-color: #333;
+    margin: 15px 0 15px 0;  
+    border: 0;
+    padding: 0;
+}
+
+h3 { 
+    font-size: 30px; 
+    font-color: #333;
+    margin: 15px 0 15px 0;  
+    border: 0;
     padding: 0;
 }
 
 p {  
     font-size: 15px; 
     font-color: #333;
-    text-align: center;
     margin: 0;  
     border: 0;
     padding: 0;
@@ -34,7 +48,6 @@ p {
 ul {
     font-size: 30px; 
     font-color: #333;
-    text-align: center;
     margin: 15px 0 15px 0;  
     border: 0;
     padding: 0px 0 0 50px;
@@ -51,7 +64,6 @@ li {
 footer { 
     font-size: 10px; 
     font-color: #333;
-    text-align: center;
     margin: 10px 0 15px 0;  
     border-top: 1px solid #CCCCCC;
     padding: 0;
