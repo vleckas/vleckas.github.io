@@ -68,7 +68,7 @@ p {
     font-size: 15px; 
     font-color: #333;
     width: 100%; 
-    margin: 15px 0 15px 0;  
+    margin: 0;  
     border: 0;
     padding: 0;
 }
