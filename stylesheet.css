@@ -1,26 +1,28 @@
 
 body { 
-    padding: 20px 20px 20px 20px;
     background-color: #fff; 
     color: #333; 
+    margin: 0;  
+    border: 0;
+    padding: 20px 20px 20px 20px;
 }
 
 h1 { 
     font-size: 30px; 
     font-color: #333;
     width: 100%; 
-    padding: 10px; 
-    border: 10px;
     margin: 10px 0 15px 0;  
+    border: 0;
+    padding: 0;
 }
 
 h2 { 
     font-size: 30px; 
     font-color: #333;
     width: 100%; 
-    padding: 10px; 
-    border: 10px;
-    margin: 10px;  
+    margin: 0;  
+    border: 0;
+    padding: 20px 20px 20px 20px;
 }
 
 
@@ -28,9 +30,9 @@ h3 {
     font-size: 30px; 
     font-color: #333;
     width: 100%; 
-    padding: 10px; 
-    border: 10px;
-    margin: 10px;  
+    margin: 0;  
+    border: 0;
+    padding: 20px 20px 20px 20px;
 }
 
 
@@ -38,9 +40,9 @@ h4 {
     font-size: 30px; 
     font-color: #333;
     width: 100%; 
-    padding: 10px; 
-    border: 10px;
-    margin: 10px;  
+    margin: 0;  
+    border: 0;
+    padding: 20px 20px 20px 20px; 
 }
 
 
@@ -48,9 +50,9 @@ h5 {
     font-size: 30px; 
     font-color: #333;
     width: 100%; 
-    padding: 10px; 
-    border: 10px;
-    margin: 10px;  
+    margin: 0;  
+    border: 0;
+    padding: 20px 20px 20px 20px; 
 }
 
 
@@ -58,43 +60,43 @@ h6 {
     font-size: 30px; 
     font-color: #333;
     width: 100%; 
-    padding: 10px; 
-    border: 10px;
-    margin: 10px;  
+    margin: 0;  
+    border: 0;
+    padding: 20px 20px 20px 20px;
 }
 
 p {  
     font-size: 30px; 
     font-color: #333;
     width: 100%; 
-    padding: 10px; 
-    border: 10px;
-    margin: 10px;  
+    margin: 0;  
+    border: 0;
+    padding: 20px 20px 20px 20px;
 }
 
 ul {
     font-size: 30px; 
     font-color: #333;
     width: 100%; 
-    padding: 10px; 
-    border: 10px;
-    margin: 10px; 
+    margin: 0;  
+    border: 0;
+    padding: 20px 20px 20px 20px; 
 }
 
 li { 
     font-size: 30px; 
     font-color: #333;
     width: 100%; 
-    padding: 10px; 
-    border: 10px;
-    margin: 10px;  
+    margin: 0;  
+    border: 0;
+    padding: 20px 20px 20px 20px; 
 }
 
 footer { 
     font-size: 30px; 
     font-color: #333;
     width: 100%; 
-    padding: 10px; 
-    border: 10px;
-    margin: 10px;  
+    margin: 0;  
+    border: 0;
+    padding: 20px 20px 20px 20px; 
 }
