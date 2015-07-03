@@ -1,3 +1,9 @@
+html, body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, a {
+    margin: 0;  
+    border: 0;
+    padding: 0;
+      }
+
 body { 
     background-color: #fff; 
     color: #333; 
@@ -24,38 +30,7 @@ h2 {
     padding: 0;
 }
 
-
 h3 { 
-    font-size: 30px; 
-    font-color: #333;
-    width: 100%; 
-    margin: 15px 0 15px 0;  
-    border: 0;
-    padding: 0;
-}
-
-
-h4 { 
-    font-size: 30px; 
-    font-color: #333;
-    width: 100%; 
-    margin: 15px 0 15px 0;  
-    border: 0;
-    padding: 0;
-}
-
-
-h5 { 
-    font-size: 30px; 
-    font-color: #333;
-    width: 100%; 
-    margin: 15px 0 15px 0;  
-    border: 0;
-    padding: 0;
-}
-
-
-h6 { 
     font-size: 30px; 
     font-color: #333;
     width: 100%; 
