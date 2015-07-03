@@ -81,13 +81,17 @@ p {
 }
 
 ul {
+    font-size: 30px; 
+    font-color: #333;
     width: 100%; 
     padding: 10px; 
     border: 10px;
-    margin: 10px;  
+    margin: 10px; 
 }
 
 li { 
+    font-size: 30px; 
+    font-color: #333;
     width: 100%; 
     padding: 10px; 
     border: 10px;
