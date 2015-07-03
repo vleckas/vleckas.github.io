@@ -5,7 +5,8 @@ html, body, h1, h2, h3, h4, h5, h6, ul, ol, li, p, a {
 }
 
 body { 
-    background-color: #fff; 
+    background-color: #fff;
+    background-image: url (https://cdn.elegantthemes.com/blog/wp-content/uploads/2013/09/bg-3-full.jpg); 
     color: #333; 
     max-width: 60%;
     margin: auto;  
