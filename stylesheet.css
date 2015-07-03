@@ -1,3 +1,12 @@
+header {
+    font-size: 30px; 
+    font-color: #333;
+    width: 100%; 
+    margin: 10px 0 15px 0;  
+    border-bottom: 1px solid #CCCCCC;
+    padding: 0;
+}
+
 body { 
     background-color: #fff; 
     color: #333; 
