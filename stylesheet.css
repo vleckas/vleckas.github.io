@@ -77,11 +77,11 @@ figure {
     float: right;
 }
 
-.section {
+body .section {
     background-color: hsla(189, 0%, 50%, 1)
     border-radius: 4px 4px 4px; 
 }
 
-.figure {
+header .figure {
   border-radius: 50%;
 }
