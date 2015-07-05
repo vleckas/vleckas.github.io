@@ -15,14 +15,6 @@ body {
     padding: 50px 50px 50px 50px;
 }
 
-header {
-    font-size: 30px; 
-    font-color: #333;
-    margin: 15px 0 15px 0;  
-    border-bottom: 1px solid #CCCCCC;
-    padding: 0;
-}
-
 h1 { 
     font-size: 30px; 
     font-color: #333;
@@ -79,12 +71,6 @@ footer {
     margin: 10px 0 15px 0;  
     border-top: 1px solid #CCCCCC;
     padding: 0;
-}
-
-figure {
-    float: right;
-    border-radius: 50%;
-
 }
 
 a {
