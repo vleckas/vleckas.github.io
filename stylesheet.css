@@ -21,6 +21,7 @@ h1 {
     margin: 15px 0 15px 0;  
     border-bottom: 1px solid #CCCCCC;
     padding: 0;
+    box-shadow: 0 1px 0 #969c8a, 0 2px 0 #fff;
 }
 
 h2 { 
@@ -84,4 +85,8 @@ body .section {
 
 header .figure {
   border-radius: 50%;
+}
+
+.post {
+  box-shadow: 0 1px 1px #000;
 }
