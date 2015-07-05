@@ -15,6 +15,14 @@ body {
     padding: 50px 50px 50px 50px;
 }
 
+header {
+    font-size: 30px; 
+    font-color: #333;
+    margin: 15px 0 15px 0;  
+    border-bottom: 1px solid #CCCCCC;
+    padding: 0;
+}
+
 h1 { 
     font-size: 30px; 
     font-color: #333;
@@ -75,9 +83,8 @@ footer {
 
 figure {
     float: right;
-    margin: 0;  
-    border: 0;
-    padding: 0;
+    border-radius: 50%;
+
 }
 
 a {
