@@ -21,7 +21,7 @@ h1 {
     margin: 15px 0 15px 0;  
     border-bottom: 1px solid #CCCCCC;
     padding: 0;
-    box-shadow: 0 1px 0 #969c8a, 0 2px 0 #fff;
+    box-shadow: 0 1px 0 #969c8a, 0 5px 0 #fff;
 }
 
 h2 { 
