@@ -21,7 +21,6 @@ h1 {
     margin: 15px 0 15px 0;  
     border-bottom: 1px solid #CCCCCC;
     padding: 0;
-    box-shadow: 0 1px 0 #969c8a, 0 5px 0 #fff;
 }
 
 h2 { 
@@ -76,17 +75,11 @@ footer {
 
 figure {
     float: right;
+    border-radius: 50%;
+    transform: translate(20px, 40px);
 }
 
 body .section {
     background-color: hsla(189, 0%, 50%, 1)
     border-radius: 4px 4px 4px; 
-}
-
-header .figure {
-  border-radius: 50%;
-}
-
-.post {
-  box-shadow: 0 1px 1px #000;
 }
