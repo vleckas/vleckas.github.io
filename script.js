@@ -62,7 +62,7 @@ function search(query){
 	$.ajax({
 		type: 'GET',
         url: 'https://apps.compete.com/sites/' + query + '/trended/uv/?apikey=' + APIKEY,
-        crossDomain: true,
+        // crossDomain: true,
         dataType: 'html',
         success: function (response) {
             console.log(response);
