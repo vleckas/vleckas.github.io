@@ -1,29 +1,29 @@
-var APIKEY = 'c47fcccc044971a629f121690939b'; // Put your API key here
+// var APIKEY = 'c47fcccc044971a629f121690939b'; // Put your API key here
 
-// Use this function to do stuff with your results. 
-// It is called after 'search' is executed.
-function searchCallback(data) {
-	console.log(data);
-	var content = $('#results');
-	data.results.forEach(function(element, index){
-		var $newDiv = $('<div>');		
-		var $newP = $('<p>');
-		$newP.text(element.name);
-		$newDiv.append($newP);
-		content.append($newDiv);
-	});
-}
+// // Use this function to do stuff with your results. 
+// // It is called after 'search' is executed.
+// function searchCallback(data) {
+// 	console.log(data);
+// 	var content = $('#results');
+// 	data.results.forEach(function(element, index){
+// 		var $newDiv = $('<div>');		
+// 		var $newP = $('<p>');
+// 		$newP.text(element.name);
+// 		$newDiv.append($newP);
+// 		content.append($newDiv);
+// 	});
+// }
 
-$(document).ready(function() {
-	$('#go').on('click', function(e){
-		var query = $('#search').val();
-		console.log('Searching: ', query);
-		search(query);
-	})
-});
+// $(document).ready(function() {
+// 	$('#go').on('click', function(e){
+// 		var query = $('#search').val();
+// 		console.log('Searching: ', query);
+// 		search(query);
+// 	})
+// });
 
-function search(query){
-	console.log('In search: ', query);
+// function search(query){
+// 	console.log('In search: ', query);
 	// Start the search here!
 // Example 1 - Cross Site Error
 	// $.ajax ({
@@ -98,19 +98,36 @@ function search(query){
 
 // Example 5: From scratch
 
-function jsonP(url, callback) {
-    $.ajax({
-        type: 'GET',
-        url: 'https://apps.compete.com/sites/' + DOMAIN + '/trended/vis/?apikey=' + APIKEY,
-        async: false,
-        contentType: "application/json",
-        jsonpCallback: callback,
-        dataType: 'jsonp',
-        success: function (json) {
-            console.dir('success');
-        },
-        error: function (e) {
-            console.log(e.message);
-        }
-    });
+var _FreeApiBaseURL = 'http://api.worldweatheronline.com/free/v1/';
+/*
+    Please change the FreeAPIKey to your own. 
+    These keys have been provided for testing only.
+    If you don't have one, then register now: http://developer.worldweatheronline.com/member/register    
+*/
+var _FreeApiKey = 'c47fcccc044971a629f121690939b';
+
+// -------------------------------------------
+
+function JSONP_LocalWeather(input) {
+    var url = _FreeApiBaseURL + 'weather.ashx?q=' + input.query + '&format=' + input.format + '&extra=' + input.extra + '&num_of_days=' + input.num_of_days + '&date=' + input.date + '&fx=' + input.fx + '&cc=' + input.cc + '&includelocation=' + input.includelocation + '&show_comments=' + input.show_comments + '&key=' + _FreeApiKey;
+
+    jsonP(url, input.callback);
+}
+
+function JSONP_SearchLocation(input) {
+    var url = _FreeApiBaseURL + "search.ashx?q=" + input.query + "&format=" + input.format + "&timezone=" + input.timezone + "&popular=" + input.popular + "&num_of_results=" + input.num_of_results + "&key=" + _FreeApiKey;
+
+    jsonP(url, input.callback);
+}
+
+function JSONP_TimeZone(input) {
+    var url = _FreeApiBaseURL + "tz.ashx?q=" + input.query + "&format=" + input.format + "&key=" + _FreeApiKey;
+
+    jsonP(url, input.callback);
+}
+
+function JSONP_MarineWeather(input) {
+    var url = _FreeApiBaseURL + "marine.ashx?q=" + input.query + "&format=" + input.format + "&fx=" + input.fx + "&key=" + _FreeApiKey;
+
+    jsonP(url, input.callback);
 }
