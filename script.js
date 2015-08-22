@@ -79,7 +79,7 @@ function search(query){
         dataType: 'json',
         crossDomain: true,
         jsonp: 'json_callback',
-        url: api.worldweatheronline.com/free/v2/marine.ashx?q=45%2C-2&format=json&includelocation=yes&key=c47fcccc044971a629f121690939b
+        url: api.worldweatheronline.com/free/v2/marine.ashx?q=45%2C-2&format=json&includelocation=yes&key=c47fcccc044971a629f121690939b,
 
     }).always(function() {
             console.log('Ajax attempt complete.');
