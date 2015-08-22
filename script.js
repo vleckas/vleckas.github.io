@@ -1,4 +1,4 @@
-var APIKEY = 'c47fcccc044971a629f121690939b'; // Put your API key here
+var APIKEY = '613dc4c510c3d1394795f553ff73b425' // Put your API key here
 
 // // Use this function to do stuff with your results. 
 // // It is called after 'search' is executed.
@@ -78,8 +78,7 @@ function search(query){
         type: 'GET',
         dataType: 'json',
         crossDomain: true,
-        url: 'api.worldweatheronline.com/free/v2/marine.ashx?q=' + query + 'format=json&includelocation=yes&key=' + APIKEY + encodeURI(query),
-
+        url: 'https://apps.compete.com/sites/' + query + '/trended/uv/?apikey=' + APIKEY,
     }).always(function() {
             console.log('Ajax attempt complete.');
         }).done(function(data, textStatus, jqXHR) {
