@@ -59,42 +59,42 @@ function search(query){
 });*/
 
 // Example 3, using CORS
-	// $.ajax({
-	// 	type: 'GET',
- //        url: 'api.worldweatheronline.com/free/v2/marine.ashx?q' + query + '&format=json&includelocation=yes&key=' + APIKEY + encodeURI(query),
- //        crossDomain: true,
- //        dataType: 'html',
- //        success: function (response) {
- //            console.log(response);
- //        },
- //        error: function (xhr, status) {
- //            alert('Error: ' + status);
- //        }
- //    });
+	$.ajax({
+		type: 'GET',
+        url: 'https://apps.compete.com/sites/' + query + '/trended/uv/?apikey=' + APIKEY,
+        crossDomain: true,
+        dataType: 'html',
+        success: function (response) {
+            console.log(response);
+        },
+        error: function (xhr, status) {
+            alert('Error: ' + status);
+        }
+    });
 
 
 // Example 4: Using JSONP, combined with new callback functions
-    var jqxhr = $.ajax ({
-        type: 'GET',
-        dataType: 'json',
-        crossDomain: true,
-        url: 'https://apps.compete.com/sites/' + query + '/trended/uv/?apikey=' + APIKEY,
-    }).always(function() {
-            console.log('Ajax attempt complete.');
-        }).done(function(data, textStatus, jqXHR) {
-            console.log(data);
-            searchCallback(data);
-        }).fail(function(jqXHR, textStatus, errorThrown) {
-            console.log('Ajax failed: ', textStatus);
-        });
+//     var jqxhr = $.ajax ({
+//         type: 'GET',
+//         dataType: 'json',
+//         crossDomain: true,
+//         url: 'https://apps.compete.com/sites/' + query + '/trended/uv/?apikey=' + APIKEY,
+//     }).always(function() {
+//             console.log('Ajax attempt complete.');
+//         }).done(function(data, textStatus, jqXHR) {
+//             console.log(data);
+//             searchCallback(data);
+//         }).fail(function(jqXHR, textStatus, errorThrown) {
+//             console.log('Ajax failed: ', textStatus);
+//         });
 
-		// Set another completion function for the request above
-		// You can set multiple always, done and fail functions like this
-	jqxhr.always(function(){
-		console.log('Still complete!');
-	});
+// 		// Set another completion function for the request above
+// 		// You can set multiple always, done and fail functions like this
+// 	jqxhr.always(function(){
+// 		console.log('Still complete!');
+// 	});
 	
-}
+// }
 
 // Example 5: From scratch
 
