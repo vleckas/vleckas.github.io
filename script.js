@@ -78,7 +78,7 @@ function search(DOMAIN){
         dataType: 'jsonp',
         crossDomain: true,
         jsonp: 'json_callback',
-        url: 'https://apps.compete.com/sites/' + DOMAIN + '/trended/vis/?apikey=' + APIKEY + encodeURI(query),
+        url: 'https://apps.compete.com/sites/' + DOMAIN + '/trended/vis/?apikey=' + APIKEY + encodeURI(DOMAIN),
     }).always(function() {
             console.log('Ajax attempt complete.');
         }).done(function(data, textStatus, jqXHR) {
