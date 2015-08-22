@@ -1,4 +1,4 @@
-var APIKEY = 'c47fcccc044971a629f121690939b'; // Put your API key here
+var APIKEY = '613dc4c510c3d1394795f553ff73b425'; // Put your API key here
 
 // Use this function to do stuff with your results. 
 // It is called after 'search' is executed.
@@ -16,14 +16,14 @@ function searchCallback(data) {
 
 $(document).ready(function() {
 	$('#go').on('click', function(e){
-		var query = $('#search').val();
-		console.log('Searching: ', query);
-		search(query);
+		var DOMAIN = $('#search').val();
+		console.log('Searching: ', DOMAIN);
+		search(DOMAIN);
 	})
 });
 
-function search(query){
-	console.log('In search: ', query);
+function search(DOMAIN){
+	console.log('In search: ', DOMAIN);
 	// Start the search here!
 // Example 1 - Cross Site Error
 	// $.ajax ({
@@ -75,10 +75,10 @@ function search(query){
 // Example 4: Using JSONP, combined with new callback functions
     var jqxhr = $.ajax ({
         type: 'GET',
-        dataType: 'json',
+        dataType: 'jsonp',
         crossDomain: true,
-        // jsonp: 'json_callback',
-        url: 'api.worldweatheronline.com/free/v2/marine.ashx?q' + query + '&format=json&includelocation=yes&key=' + APIKEY + encodeURI(query),
+        jsonp: 'json_callback',
+        url: 'https://apps.compete.com/sites/' + DOMAIN + '/trended/vis/?apikey=' + APIKEY + encodeURI(query),
     }).always(function() {
             console.log('Ajax attempt complete.');
         }).done(function(data, textStatus, jqXHR) {
