@@ -78,8 +78,7 @@ function search(query){
         type: 'GET',
         dataType: 'json',
         crossDomain: true,
-        jsonp: 'json_callback',
-        url: 'api.worldweatheronline.com/free/v2/marine.ashx?q=' + query + 'format=json&includelocation=yes&key=' + APIKEY,
+        url: 'api.worldweatheronline.com/free/v2/marine.ashx?q=' + query + 'format=json&includelocation=yes&key=' + APIKEY + encodeURI(query),
 
     }).always(function() {
             console.log('Ajax attempt complete.');
