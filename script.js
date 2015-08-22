@@ -71,6 +71,7 @@ function search(query){
             alert('Error: ' + status);
         }
     });
+}    
 
 
 // Example 4: Using JSONP, combined with new callback functions
