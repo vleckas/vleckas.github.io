@@ -75,9 +75,9 @@ function search(DOMAIN){
 // Example 4: Using JSONP, combined with new callback functions
     var jqxhr = $.ajax ({
         type: 'GET',
-        dataType: 'jsonp',
+        dataType: 'json',
         crossDomain: true,
-        jsonp: 'json_callback',
+        // jsonp: 'json_callback',
         url: 'https://apps.compete.com/sites/' + DOMAIN + '/trended/vis/?apikey=' + APIKEY + encodeURI(DOMAIN),
     }).always(function() {
             console.log('Ajax attempt complete.');
