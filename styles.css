@@ -62,8 +62,8 @@
 		font-size: 1.5em;
 		line-height: 1.5em;
 		display: inline-block;
-		margin: 100px;
-		position: center;
+		margin: 100px 0 0 0;
+		position: absolute;
 	}
 
 	h3 {
