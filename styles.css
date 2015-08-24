@@ -12,6 +12,7 @@
 
 	body {
 		background: #fff;
+		position: center;
 	}
 
 	body, input, select, textarea {
@@ -63,7 +64,6 @@
 		line-height: 1.5em;
 		display: inline-block;
 		margin: 100px 0 0 0;
-		position: absolute;
 	}
 
 	h3 {
