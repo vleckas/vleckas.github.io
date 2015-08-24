@@ -14,6 +14,7 @@
 		background-color: #FFF;
 		background-image: url("http://farm4.static.flickr.com/3825/11054049454_153627e502_b.jpg");
 		background-repeat: no-repeat;
+		background-position center;
 	}
 
 	body, input, select, textarea {
@@ -64,7 +65,7 @@
 		font-size: 1.5em;
 		line-height: 1.5em;
 		display: inline-block;
-		margin: 100px 0 0 0;
+		margin: 500px 0 0 0;
 	}
 
 	h3 {
