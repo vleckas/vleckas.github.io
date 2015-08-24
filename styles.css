@@ -11,8 +11,8 @@
 /* Basic */
 
 	body {
-		background: #fff;
 		background-image: url("http://farm4.static.flickr.com/3825/11054049454_153627e502_b.jpg");
+		background-repeat: no-repeat;
 	}
 
 	body, input, select, textarea {
