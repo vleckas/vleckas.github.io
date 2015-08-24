@@ -11,6 +11,7 @@
 /* Basic */
 
 	body {
+		background-color: #FFF;
 		background-image: url("http://farm4.static.flickr.com/3825/11054049454_153627e502_b.jpg");
 		background-repeat: no-repeat;
 	}
@@ -139,15 +140,5 @@
 			padding: 1em 1.5em;
 		}
 
-	.align-left {
-		text-align: left;
-	}
 
-	.align-center {
-		text-align: center;
-	}
-
-	.align-right {
-		text-align: right;
-	}
 
