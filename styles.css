@@ -12,7 +12,6 @@
 
 	body {
 		background: #fff;
-		position: center;
 	}
 
 	body, input, select, textarea {
@@ -1088,3 +1087,6 @@
 		#footer .icons a {
 			color: #bbb;
 		}
+h2 {
+	position: center;
+}
